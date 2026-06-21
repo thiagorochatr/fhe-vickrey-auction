@@ -1,0 +1,48 @@
+{
+  "name": "fhe-vickrey-auction",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "account": "pnpm --filter @fhe-vickrey-auction/hardhat account",
+    "chain": "pnpm --filter @fhe-vickrey-auction/hardhat chain",
+    "fork": "pnpm --filter @fhe-vickrey-auction/hardhat fork",
+    "deploy": "pnpm --filter @fhe-vickrey-auction/hardhat deploy",
+    "verify": "pnpm --filter @fhe-vickrey-auction/hardhat verify",
+    "hardhat-verify": "pnpm --filter @fhe-vickrey-auction/hardhat hardhat-verify",
+    "compile": "pnpm --filter @fhe-vickrey-auction/hardhat compile",
+    "generate": "pnpm --filter @fhe-vickrey-auction/hardhat generate",
+    "flatten": "pnpm --filter @fhe-vickrey-auction/hardhat flatten",
+    "hardhat:lint": "pnpm --filter @fhe-vickrey-auction/hardhat lint",
+    "hardhat:lint-staged": "pnpm --filter @fhe-vickrey-auction/hardhat lint-staged",
+    "hardhat:format": "pnpm --filter @fhe-vickrey-auction/hardhat format",
+    "hardhat:test": "pnpm --filter @fhe-vickrey-auction/hardhat test",
+    "test": "pnpm hardhat:test",
+    "format": "pnpm next:format && pnpm hardhat:format",
+    "start": "pnpm --filter @fhe-vickrey-auction/nextjs dev",
+    "next:dev": "pnpm --filter @fhe-vickrey-auction/nextjs dev",
+    "next:build": "pnpm --filter @fhe-vickrey-auction/nextjs build",
+    "next:start": "pnpm --filter @fhe-vickrey-auction/nextjs start",
+    "next:lint": "pnpm --filter @fhe-vickrey-auction/nextjs lint",
+    "next:format": "pnpm --filter @fhe-vickrey-auction/nextjs format",
+    "next:check-types": "pnpm --filter @fhe-vickrey-auction/nextjs check-types",
+    "vercel": "pnpm --filter @fhe-vickrey-auction/nextjs vercel",
+    "vercel:yolo": "pnpm --filter @fhe-vickrey-auction/nextjs vercel:yolo",
+    "postinstall": "husky install",
+    "precommit": "lint-staged",
+    "dev": "concurrently -n next,hardhat -c magenta,blue \"pnpm next:dev\" \"pnpm chain\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.18.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "viem": "2.40.3"
+    }
+  }
+}
