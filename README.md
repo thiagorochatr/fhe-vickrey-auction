@@ -18,6 +18,9 @@ tokenizados: investidores institucionais precificam um ativo sem revelar suas
 valorações aos concorrentes. Neste protótipo, uma única unidade é leiloada e o
 token de RWA é simulado (*mock*).
 
+> 📖 **Quer apenas rodar o projeto?** Siga o [**Manual de execução**](MANUAL.md),
+> um passo a passo completo, do zero, para qualquer pessoa.
+
 ## Funcionalidades
 
 - **Lances cifrados ponta a ponta**: os lances são *ciphertexts* `euint64`;
@@ -105,6 +108,10 @@ token de RWA é simulado (*mock*).
 ```
 
 ## Primeiros passos
+
+> O resumo abaixo é a versão rápida. Para o passo a passo completo (carteira,
+> ETH de testnet, fluxo do leilão pela interface e solução de problemas), veja o
+> [**Manual de execução**](MANUAL.md).
 
 ### Pré-requisitos
 
